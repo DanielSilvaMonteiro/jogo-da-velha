@@ -2,6 +2,7 @@ var jogador, vencedor = null;
 var jogadorSelecionado = document.getElementById('jogador-selecionado');
 var vencedorSelecionado = document.getElementById('vencedor-selecionado');
 var quadrado = document.getElementsByClassName('quadrado');
+      
 
 mudarJogador('X');
 
@@ -93,6 +94,8 @@ function checaVencedor(){
 function mudaVencedor(quadrado){
     vencedor = quadrado.innerHTML;
     vencedorSelecionado.innerHTML = vencedor;
+      
+   
 }
 
 function mudaCorQuadrado(quadrado1,quadrado2,quadrado3){
